@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.scss">
+    <!-- Latest compiled and minified CSS for Bootstrap -->
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5R4QHu_RPMefI3D9pKhJ6GyB6tw_Kgqg&callback=initMap"
+    async defer></script>
+  </head>
+  <body>
+
+  	<div class="sidebar-option-pane">
+  		<h1 class="sidebar-header"> Campus Free Food Locator </h1>
+      <div class="sidebar-content">
+        <div class="form-group">
+          <label for="usr">University:</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+
+        <button type="button" class="btn btn-primary">Find Free Food!</button>
+      </div>
+  	</div>
+
+    <div id="map">
+	    <script>
+        // Map of the campus
+	      var map;
+        // Coordinates of campus
+        var campus = {lat: 32.987, lng: -96.7515};
+
+        // Initialize Google Maps with API
+	      function initMap() {
+	        map = new google.maps.Map(document.getElementById('map'), {
+	          center: campus,
+	          zoom: 17,
+            mapTypeId: 'terrain'
+	        });
+
+          var marker = new google.maps.Circle({
+            center: campus,
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          /* NOTE!
+             This method is extremely tedious. A more efficient, orthogonal, and automated function will be made after more knowledge gained
+          */
+
+          var marker_AB = new google.maps.Circle({
+            center: {lat: 32.9852, lng: -96.7502},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_AB2 = new google.maps.Circle({
+            center: {lat: 32.989992, lng: -96.748670},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_AH1 = new google.maps.Circle({
+            center: {lat: 32.987836, lng: -96.752132},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_AH2 = new google.maps.Circle({
+            center: {lat: 32.987860, lng: -96.751795},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_AS = new google.maps.Circle({
+            center: {lat: 32.988836, lng: -96.750173},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_ATC = new google.maps.Circle({
+            center: {lat: 32.986166, lng: -96.747612},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_CR = new google.maps.Circle({
+            center: {lat: 32.992500, lng: -96.748671},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          var marker_DHW = new google.maps.Circle({
+            center: {lat: 32.989967, lng: -96.754469},
+            radius: 7,
+            strokeColor: '#D53C50',
+            fillColor: '#D53C50',
+            map: map
+          });
+
+          map.data.setStyle
+
+          function getCircle() {
+            return {
+              path: google.maps.SymbolPath.CIRCLE,
+              fillColor: 'red',
+              fillOpacity: .2,
+              scale: 7,
+              strokeColor: 'white',
+              strokeWeight: .5
+            };
+          } 
+
+	      }
+	    </script>
+
+    </div>
+    
+  </body>
+</html>

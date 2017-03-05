@@ -1,0 +1,20 @@
+AB, Activity Center, 32.9852° N, 96.7502° W
+AB, Administration Building, 32.989992 N, -96.748670 W
+AH1, Arts and Humanities 1, 32.987836, -96.752132
+AH2, Arts and Humanities 2, 32.987860, -96.751795
+AS, Visual Arts Studio, 32.988836, -96.750173
+ATC, Edith O'Donnell Arts & Technology, 32.986166, -96.747612
+CR, Callier Center Richardson, 32.992500, -96.748671
+DHW, Dining Hall West, 32.989967, -96.754469
+ECSN N., Engineering & Computer Science, 32.986410, -96.750368
+ECSS S., Engineering & Computer Science, 32.986410, -96.750368
+FN, Founders North, 32.988184, -96.749116
+FO, Founders Building, 32.987700, -96.748722
+JO, Erik Jonsson Academic Center, 32.986410, -96.750368
+JSOM, Naveen Jindal School of Management, 32.984726, -96.747048
+RCW, Recreation Center West, 32.990152, -96.754992
+SSB, Student Services Building, 32.985829, -96.748819
+SSA, Student Services Building Addition, 32.985724, -96.749443
+SU, Student Union, 32.986847, -96.748952
+SUF, Student Union Food Court, 32.986847, -96.748952
+ 
